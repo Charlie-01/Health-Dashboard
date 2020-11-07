@@ -1,0 +1,88 @@
+body{
+    background-color: rgba(204, 222, 244, 0.425);
+    font-family: 'Lato', sans-serif;
+}
+
+
+#main__body{
+    margin-left: 0px;
+    margin-right: 10px;
+    background-color: rgba(204, 222, 244, 0.425);
+}
+
+#main__body > section{
+    padding-left: 0;
+}
+
+.logo{
+    width: 15%;
+    position: absolute;
+    height: 20%;
+    margin: 0; 
+    top: 5%;
+}
+
+.personal__display{
+    width: 60%;
+    height: 50%;
+    margin: 0;
+    position: absolute;
+    right: 25%;
+    top: 0%;
+}
+
+.physician__display{
+    width: 33%;
+    float: right;
+    position: absolute;
+    left: 66%;
+    top: 0px;
+    height: 30%;
+}
+
+.news__display{
+    width: 33%;
+    position: absolute;
+    left: 66%;
+    top: 33%;
+    height: 60%;
+}
+
+.reminders__display{
+    width: 50%;
+    margin-top: 2%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 10%
+    
+}
+
+.border{
+    border-style: none;
+}
+
+.display__box{
+    position: relative;
+    margin-top: 20px;
+}
+
+.nav{
+    background-color: rgb(52, 66, 83);
+}
+
+.nav-item > a{
+    color: lightgrey;
+    border-bottom-style: solid;
+}
+
+.home__tab{
+    background-color:rgba(145, 156, 170, 0.479);
+}
+.home__tab > a {
+    color: white;
+}
+
+.setting__tab{
+    margin-top: 170%;
+}

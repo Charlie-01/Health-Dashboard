@@ -16,19 +16,20 @@
     
     <title>Health Dashboard</title>
 </head>
-<body id="test" class="container-fluid p-0">
+<body>
     <!-- left side menu on dashboard -->
-    <div class="row m-auto" id="main__body">
-        <section class="col-2">
+    
+    <div class="row" id="main__body">
+        <section class="col-3">
             <nav>
                 <ul class="nav flex-column">
                     <!-- NAME OF PATIENT/CLIENT -->
-                    <li class="nav-item home__tab">
-                      <a class="nav-link active" href="#"> <img src="https://icon-library.com/images/profile-icon-white/profile-icon-white-6.jpg" alt="profile" width="15%" height="15%">Rupak Stephen</a>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Rupak Stephen</a>
                     </li>
 
                     <!-- Report Tab -->
-                    <li class="nav-item report__tab">
+                    <li class="nav-item">
                       <a class="nav-link" href="report.html">Report</a>
                     </li>
                     
@@ -48,34 +49,41 @@
                     </li>
                     
                     <!-- Settings Tab-->
-                    <li class="nav-item setting__tab">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Settings</a>
                     </li>
                   </ul>
             </nav>
         </section>
 
-        <section class="col-10 display__box">
-                <!-- logo -->
-                <section class="logo">
-                    <img src="https://icon-library.com/images/profile-icon-white/profile-icon-white-6.jpg" alt="logo" width="80%" height="100%">
-                </section>
-            
+        <section class="col-9 dispaly__box">
+
                 <!-- personal stats -->
-                <section class="personal__display">
-                    <img src="https://i.pinimg.com/originals/81/08/4d/81084d04dbcadec0b75a7d494b253d7d.gif" alt="health chart" width="80%" height="100%">
+                <section class="patients border">
+                    <!-- pulls from high risk patients -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </section>
                 
                 <!-- physicians -->
-                <section class="physician__display">Your physicians</section>
+                <section class="oncall border">
+                    <ul>
+                        <li>Bob Buttlicker</li>
+                        <li>John Uteeai</li>
+                        <li>Carole Baskin</li>
+                    </ul>
+                </section>
 
-                <!-- news -->
-                <section class="reminders__display">
-                    <img src="assets/reminders2.png" alt="reminders" width="100%" height="100%">
+                <!-- cal -->
+                <section class="calendar border">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=cstanton%40collectivei.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </section>
 
                 <!-- reminders -->
-                <section class="news__display border"><iframe width="100%" height="100%" src="https://www.npr.org/sections/health/" frameborder="0"></iframe></section>
+                <section class="reminders border">Reminders</section>
             </main>
         </section>
     </div>

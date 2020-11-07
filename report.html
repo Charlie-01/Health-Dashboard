@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- Bootstrap  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="assets/scripts/jQuery.js"></script>
+    
+    <title>Health Dashboard</title>
+</head>
+<body class="container-fluid p-0">
+    <!-- left side menu on dashboard -->
+    <main class="row m-auto" id="main__body">
+        <section class="col-2">
+            <nav>
+                <ul class="nav flex-column">
+                    <!-- NAME OF PATIENT/CLIENT -->
+                    <li class="nav-item home__tab">
+                        <a class="nav-link active" href="index.html"> <img src="https://icon-library.com/images/profile-icon-white/profile-icon-white-6.jpg" alt="profile" width="15%" height="15%">Rupak Stephen</a>
+                    </li>
+
+                    <!-- Report Tab -->
+                    <li class="nav-item report__tab">
+                    <a class="nav-link" href="#">Report</a>
+                    </li>
+                    
+                    <!-- Tracking Tab-->
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Tracking</a>
+                    </li>
+                    
+                    <!-- Appointments Tab-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Appointments</a>
+                    </li>
+                    
+                    <!-- Perscriptions Tab-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perscriptions</a>
+                    </li>
+                    
+                    <!-- Settings Tab-->
+                    <li class="nav-item setting__tab">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- bootstrap form -->
+        <form>
+            <fieldset class="form-group row">
+                <fieldset class="col">
+                    <label for="age" class="col-sm col-form-label"><h6>Age:</h6></label><br>
+                    <input type="text" class="form-control" id="age" name="age"><br>
+                </fieldset>
+                <fieldset class="col">
+                    <label for="gender" class="col-form-label"><h6>Gender:</h6></label><br>
+                    <input type="text" class="form-control" id="gender" name="gender">
+                </fieldset>
+                <fieldset class="col">
+                    <label for="weight" class="col-form-label"><h6>Weight:</h6></label><br>
+                    <input type="text" class="form-control" id="weight" name="weight">                
+                </fieldset>
+                <fieldset class="col">
+                    <label for="height" class="col-form-label"><h6>Height:</h6></label><br>
+                    <input type="text" class="form-control" id="height" name="height">
+                </fieldset>
+            </fieldset>
+
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h6>General</h6>
+                        <input type="checkbox" id="general" name="general">
+                        <label for="fever">Fever</label><br>
+                        <input type="checkbox" id="general" name="general">
+                        <label for="chills">Chills</label><br>
+                        <input type="checkbox" id="general" name="general">
+                        <label for="sorethroat">Sore Throat</label><br>
+                        <input type="checkbox" id="general" name="general">
+                        <label for="cough">Cough</label><br>
+
+                        <h6>Dermatological</h6>
+                        <input type="checkbox" id="dermatology" name="dermatology">
+                        <label for="discoloration">Discoloration</label><br>
+                        <input type="checkbox" id="dermatology" name="dermatology">
+                        <label for="lumps">Lumps</label><br>
+                        <input type="checkbox" id="dermatology" name="dermatology">
+                        <label for="irritation">Irritation</label><br>
+                        <input type="checkbox" id="dermatology" name="dermatology">
+                        <label for="growth">Unusual Growth</label><br>
+
+                        <h6>Psychiatric</h6>
+                        <input type="checkbox" id="psychiatric" name="psychiatric">
+                        <label for="manicsymptoms">Manic Symptoms Issue</label> <br>
+                        <input type="checkbox" id="psychiatric" name="psychiatric">
+                        <label for="depressivesymptoms">Depressive Symptoms</label> <br>
+                        <input type="checkbox" id="psychiatric" name="psychiatric">
+                        <label for="anxiety">Anxiety</label> <br>
+                        <input type="checkbox" id="psychiatric" name="psychiatric">
+                        <label for="delusions">Delusions</label> <br>
+                    </div>
+
+                    
+
+                
+                    <div class="col">
+                        <h6>Cardiac</h6>
+                        <input type="checkbox" id="cardiac" name="cardiac">
+                        <label for="bloodpressure">Blood Pressure Issue</label> <br>
+                        <input type="checkbox" id="cardiac" name="cardiac">
+                        <label for="glucose">Glucose Level Issue</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac">
+                        <label for="diabetes">Diabetic</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac">
+                        <label for="pastcardiacissue">Previous Cardiac Issue</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac">
+                        <label for="heartrate">Abnormal Heartrate</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac">
+                        <label for="swelling">Swelling</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac">
+                        <label for="bruising">Bruising</label><br>
+            
+                        <!-- respiratory symptoms -->
+
+                        <h6>Gastric</h6>
+                        <input type="checkbox" id="gastric" name="gastric">
+                        <label for="heartburn">Heart Burn</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric">
+                        <label for="nausea">Nausea</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric">
+                        <label for="vommiting">Vommiting</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric">
+                        <label for="constipation">Constipation</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric">
+                        <label for="diarrhea">Diarrhea</label> <br>
+                        
+                    </div>
+
+                    <div class="col"> 
+                        <h6>Skeletal</h6>
+                        <input type="checkbox" id="skeletal" name="skeletal">
+                        <label for="back">Back Pain</label><br>
+                        <input type="checkbox" id="skeletal" name="skeletal">
+                        <label for="joint">Joint Pain</label><br>
+                        <input type="checkbox" id="skeletal" name="skeletal">
+                        <label for="growth">Growth</label><br>
+                        <input type="checkbox" id="skeletal" name="skeletal">
+                        <label for="brokenbone">Broken Bone</label><br>
+
+                
+                        <h6>Urinary</h6>
+                        <input type="checkbox" id="urinary" name="urinary">
+                        <label for="burning">Burning</label><br>
+                        <input type="checkbox" id="urinary" name="urinary">
+                        <label for="abnormaldischarge">Abnormal Discharge</label><br>
+                        <input type="checkbox" id="urinary" name="urinary">
+                        <label for="itching">Itching</label><br>
+                        <input type="checkbox" id="urinary" name="urinary">
+                        <label for="bumps">Bumps</label><br>
+                        
+                        <h6>Respiratory</h6>
+                        <input type="checkbox" id="respiratory" name="respiratory">
+                        <label for="chestpain">Chest Pain</label><br>
+                        <input type="checkbox" id="respiratory" name="respiratory">
+                        <label for="difficultybreathing">Difficulty Breathing</label><br>
+                        <input type="checkbox" id="respiratory" name="respiratory">
+                        <label for="smokinghistory">Smoking History</label><br>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>
