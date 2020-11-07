@@ -12,19 +12,19 @@
     ],
     "gender": "male",
     "birthDate": "2001-01-07",
-    "stats": [
-        {
-            "weight": [
-              "Smith"
-            ],
-            "height": [
-              "Bob"
-            ],
-            "race": [
-              "Bob"
-            ]
-          }
-    ],
+    // "stats": [
+    //     {
+    //         "weight": [
+    //           "Smith"
+    //         ],
+    //         "height": [
+    //           "Bob"
+    //         ],
+    //         "race": [
+    //           "Bob"
+    //         ]
+    //       }
+    // ],
     "healthcare": [
         {
             "primary-physician": [
@@ -35,7 +35,8 @@
                         "city": "Troy",
                         "state": "NY",
                         "postal-code": 12180
-                    }
+                    },
+                "name": 
               }
             ],
             "insurance": [
