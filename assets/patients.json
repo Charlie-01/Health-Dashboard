@@ -1,0 +1,49 @@
+{
+    "resourceType": "Patient",
+    "name": [
+      {
+        "last": [
+          "Smith"
+        ],
+        "first": [
+          "Bob"
+        ]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "2001-01-07",
+    "stats": [
+        {
+            "weight": [
+              "Smith"
+            ],
+            "height": [
+              "Bob"
+            ],
+            "race": [
+              "Bob"
+            ]
+          }
+    ],
+    "healthcare": [
+        {
+            "primary-physician": [
+              {
+                "location":
+                    {
+                        "street-address": "12 Michigan Ave",
+                        "city": "Troy",
+                        "state": "NY",
+                        "postal-code": 12180
+                    }
+              }
+            ],
+            "insurance": [
+              "Cigna"
+            ],
+            "pharmacy": [
+              "CVS Midland Park"
+            ]
+          }
+    ]
+  }
