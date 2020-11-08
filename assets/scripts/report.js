@@ -4,7 +4,7 @@ function gatherReportData() {
     // These values would be stored in a session cookie upon user authentication
     // dataobj['patient_id'] = Math.floor(100*Math.random());
     // dataobj['doctor_id'] = Math.floor(100*Math.random());
-    dataobj['patient_id'] = 609;
+    dataobj['patient_id'] = 420;
     dataobj['doctor_id'] = 69;
     
     var age = $("#age").val();

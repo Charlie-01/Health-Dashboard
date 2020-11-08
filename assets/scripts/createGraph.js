@@ -17,13 +17,11 @@ function graph(JSON_Obj) {
       }
 
     var data = [];
-    
-    //array of risk evals
-    console.log(JSON_Obj.risk_evaluations);
 
     var i;
-    var risk_array = JSON_Obj.risk_evaluations
-    for(i = 0; i < 10;i++){
+    var risk_array = JSON_Obj.risk_evaluations;
+    console.log(risk_array);
+    for(i = 0; i < 10;i++) {
         var obj = {};
         var risk_index = risk_array[i].risks[0].index;
         var datestring = risk_array[i].report_time.split(" ")[0];
