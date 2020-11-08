@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- Bootstrap  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="assets/scripts/report.js"></script>
+    <script src="assets/scripts/createGraph.js"></script>
+    
+    <!-- jQuery -->
+    <script src="assets/scripts/jQuery.js"></script>
+    
+    <title>Health Dashboard</title>
+</head>
+<body class="container-fluid p-0">
+    <!-- left side menu on dashboard -->
+    <main class="row m-auto" id="main__body">
+        <section class="col-2">
+            <nav>
+                <ul class="nav flex-column">
+                    <!-- NAME OF PATIENT/CLIENT -->
+                    <li class="nav-item home__tab">
+                        <a class="nav-link active" href="patient.html"> <img src="https://icon-library.com/images/profile-icon-white/profile-icon-white-6.jpg" alt="profile" width="15%" height="15%">Rupak Stephen</a>
+                    </li>
+
+                    <!-- Report Tab -->
+                    <li class="nav-item report__tab">
+                    <a class="nav-link" href="#">Report</a>
+                    </li>
+                    
+                    <!-- Tracking Tab-->
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Tracking</a>
+                    </li>
+                    
+                    <!-- Appointments Tab-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Appointments</a>
+                    </li>
+                    
+                    <!-- Perscriptions Tab-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perscriptions</a>
+                    </li>
+                    
+                    <!-- Settings Tab-->
+                    <li class="nav-item setting__tab">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- bootstrap form -->
+        <form id="frm" class="col-10">
+            <fieldset class="form-group row">
+                <fieldset class="col">
+                    <label for="age" class="col-sm col-form-label"><h6>Age:</h6></label><br>
+                    <input type="number" class="form-control" id="age" name="age"><br>
+                </fieldset>
+                <fieldset class="col">
+                    <label for="gender" class="col-form-label"><h6>Birth Sex:</h6></label><br>
+                    <select class="form-control" id="sex" name="sex">
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                      </select>
+                </fieldset>
+                <fieldset class="col">
+                    <label for="weight" class="col-form-label"><h6>Weight(kg):</h6></label><br>
+                    <input type="number" class="form-control" id="weight" name="weight">                
+                </fieldset>
+                <fieldset class="col">
+                    <label for="height" class="col-form-label"><h6>Height(cm):</h6></label><br>
+                    <input type="number" class="form-control" id="height" name="height">
+                </fieldset>
+                <fieldset class="col">
+                    <label for="race" class="col-form-label"><h6>Race/Ethicity:</h6></label><br>
+                    <select class="form-control" id="race" name="race">
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="0">Not Specified</option>
+                        <option value="1">White Caucasian</option>
+                        <option value="2">European</option>
+                        <option value="3">African American</option>
+                        <option value="4">American Hispanic</option>
+                        <option value="5">Asian</option>
+                        <option value="6">Chinese</option>
+                        <option value="7">Japanese</option>
+                        <option value="8">Korean</option>
+                        <option value="9">Skandinavian</option>
+                        <option value="10">Southern European</option>
+                        <option value="11">Middle-eastern, Arab</option>
+                        <option value="12">Middle-eastern, non-Arab</option>
+                        <option value="13">Pacific Islander</option>
+                        <option value="14">Pakistani</option>
+                        <option value="15">Indian</option>
+                        <option value="16">Black African</option>
+                        <option value="17">Bangaladeshi</option>
+                        <option value="18">Maori</option>
+                        <option value="19">Aboriginal</option>
+                        <option value="30">Other</option>
+                      </select>
+                </fieldset>
+            </fieldset>
+
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h6>General</h6>
+                        <input type="checkbox" id="general" name="general" value="fever">
+                        <label for="fever">Fever</label><br>
+                        <input type="checkbox" id="general" name="general" value="chills">
+                        <label for="chills">Chills</label><br>
+                        <input type="checkbox" id="general" name="general" value="sorethroat">
+                        <label for="sorethroat">Sore Throat</label><br>
+                        <input type="checkbox" id="general" name="general" value="cough">
+                        <label for="cough">Cough</label><br>
+
+                        <h6>Dermatological</h6>
+                        <input type="checkbox" id="dermatology" name="dermatology" value="discoloration">
+                        <label for="discoloration">Discoloration</label><br>
+                        <input type="checkbox" id="dermatology" name="dermatology" value="lumps">
+                        <label for="lumps">Lumps</label><br>
+                        <input type="checkbox" id="dermatology" name="dermatology" value="irritation">
+                        <label for="irritation">Irritation</label><br>
+                        <input type="checkbox" id="dermatology" name="dermatology" value="growth">
+                        <label for="growth">Unusual Growth</label><br>
+
+                        <h6>Psychiatric</h6>
+                        <input type="checkbox" id="psychiatric" name="psychiatric" value="manicsymptoms">
+                        <label for="manicsymptoms">Manic Symptoms Issue</label> <br>
+                        <input type="checkbox" id="psychiatric" name="psychiatric" value="depressive">
+                        <label for="depressivesymptoms">Depressive Symptoms</label> <br>
+                        <input type="checkbox" id="psychiatric" name="psychiatric" value="anxiety">
+                        <label for="anxiety">Anxiety</label> <br>
+                        <input type="checkbox" id="psychiatric" name="psychiatric" value="delusions">
+                        <label for="delusions">Delusions</label> <br>
+                    </div>
+
+                    
+
+                
+                    <div class="col">
+                        <h6>Cardiac</h6>
+                        <input type="checkbox" id="cardiac" name="cardiac" value="bloodpressure">
+                        <label for="bloodpressure">Blood Pressure Issue</label> <br>
+                        <input type="checkbox" id="cardiac" name="cardiac" value="glucose">
+                        <label for="glucose">Glucose Level Issue</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac" value="diabetes">
+                        <label for="diabetes">Diabetic</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac" value="pastcardiac">
+                        <label for="pastcardiacissue">Previous Cardiac Issue</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac" value="heartrate">
+                        <label for="heartrate">Abnormal Heartrate</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac" value="swelling">
+                        <label for="swelling">Swelling</label><br>
+                        <input type="checkbox" id="cardiac" name="cardiac" value="bruising">
+                        <label for="bruising">Bruising</label><br>
+            
+                        <!-- respiratory symptoms -->
+
+                        <h6>Gastric</h6>
+                        <input type="checkbox" id="gastric" name="gastric" value="heartburn">
+                        <label for="heartburn">Heart Burn</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric" value="nausea">
+                        <label for="nausea">Nausea</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric" value="vommiting">
+                        <label for="vommiting">Vommiting</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric" value="constipation">
+                        <label for="constipation">Constipation</label> <br>
+                        <input type="checkbox" id="gastric" name="gastric" value="diarrhea">
+                        <label for="diarrhea">Diarrhea</label> <br>
+                        
+                    </div>
+
+                    <div class="col"> 
+                        <h6>Skeletal</h6>
+                        <input type="checkbox" id="skeletal" name="skeletal" value="back">
+                        <label for="back">Back Pain</label><br>
+                        <input type="checkbox" id="skeletal" name="skeletal" value="joint">
+                        <label for="joint">Joint Pain</label><br>
+                        <input type="checkbox" id="skeletal" name="skeletal" value="growth">
+                        <label for="growth">Growth</label><br>
+                        <input type="checkbox" id="skeletal" name="skeletal" value="brokenbone">
+                        <label for="brokenbone">Broken Bone</label><br>
+
+                
+                        <h6>Urinary</h6>
+                        <input type="checkbox" id="urinary" name="urinary" value="burning">
+                        <label for="burning">Burning</label><br>
+                        <input type="checkbox" id="urinary" name="urinary" value="discharge">
+                        <label for="abnormaldischarge">Abnormal Discharge</label><br>
+                        <input type="checkbox" id="urinary" name="urinary" value="itching">
+                        <label for="itching">Itching</label><br>
+                        <input type="checkbox" id="urinary" name="urinary" value="bumps">
+                        <label for="bumps">Bumps</label><br>
+                        
+                        <h6>Respiratory</h6>
+                        <input type="checkbox" id="respiratory" name="respiratory" value="chestpain">
+                        <label for="chestpain">Chest Pain</label><br>
+                        <input type="checkbox" id="respiratory" name="respiratory" value="difficultybreathing">
+                        <label for="difficultybreathing">Difficulty Breathing</label><br>
+                        <input type="checkbox" id="respiratory" name="respiratory" value="smokinghistory">
+                        <label for="smokinghistory">Smoking History</label><br>
+
+                        <button type="button" onclick="gatherReportData()" class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

@@ -3,45 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
-    <!-- jQuery -->
-    <script src="assets/scripts/jQuery.js"></script>
-    
-    <title>Health Dashboard</title>
-</head>
-<body>
-    <!-- left side menu on dashboard -->
-    <nav>
-        <!-- NAME OF PATIENT/CLIENT -->
-        <section></section>
+    <link rel="stylesheet" href="assets/login.css">
         
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </nav>
+    <title>Name Login</title>
+</head>
 
-    <main class="container">
-        <div class="row">
-            <!-- personal stats -->
-            <section></section>
-            
-            <!-- physicians -->
-            <section></section>
-        </div>
-        <!-- news -->
-        <section></section>
+ <body>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
 
-        <!-- reminders -->
-        <section></section>
-    </main>
+    <form method="post" action="index.html">
+    <div style="position:absolute; left:40.5%; top:33%">
+    <div class="box">
+
+    <img class="logo" src="https://media.discordapp.net/attachments/774644759506976769/774744801413300244/mediogo.png?width=922&height=629" alt="logo" width="30%" height="37.5%">
+
+    <h1>Company Name</h1>
+
+    <input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
     
+    <input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+    
+    <a href="patient.html"><div class="btn">Patient Log In</div></a> <!-- End Btn -->
+
+    <a href="doctor.html"><div id="btn2">Hospital Log In</div></a> <!-- End Btn2 -->
+    
+    </div>
+    </div>
+    
+    </form>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
 </body>
 </html>
